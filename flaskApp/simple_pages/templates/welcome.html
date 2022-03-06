@@ -1,6 +1,6 @@
 {% extends "base.html" %}
 {% block content %}
-    <h1>Welcome to the Vendor App!</h1>
+    <h1>{% block title %}Welcome to the Vendor App!{% endblock %}</h1>
     <hr>
     <p>To get started, click <a href={{ url_for('index') }}>here</a>.</p>
 {% endblock %}
